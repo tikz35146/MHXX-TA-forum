@@ -1,0 +1,35 @@
+name: TA記録の投稿
+description: 新しいMHXX TA記録の掲載を申請します
+title: "[TA] "
+labels: ["TA記録", "確認待ち"]
+body:
+  - type: markdown
+    attributes:
+      value: "投稿前にガイドラインと該当レギュレーションを確認してください。掲載前に内容を確認します。"
+  - type: input
+    id: quest
+    attributes: {label: クエスト名, placeholder: "例：集会所★G4 〇〇の狩猟"}
+    validations: {required: true}
+  - type: input
+    id: weapon
+    attributes: {label: 武器種・スタイル, placeholder: "例：太刀 / ブレイヴ"}
+    validations: {required: true}
+  - type: input
+    id: time
+    attributes: {label: タイム, placeholder: "例：3'21\"45"}
+    validations: {required: true}
+  - type: dropdown
+    id: regulation
+    attributes: {label: レギュレーション, options: [A, B, C, UL, その他・要相談]}
+    validations: {required: true}
+  - type: input
+    id: hunter
+    attributes: {label: ハンターネーム}
+    validations: {required: true}
+  - type: textarea
+    id: proof
+    attributes: {label: 証明動画・画像のURL, description: "YouTube、X、Google Driveなど、誰でも確認できるURLを記載してください。"}
+    validations: {required: true}
+  - type: textarea
+    id: note
+    attributes: {label: 装備・スキル・補足}

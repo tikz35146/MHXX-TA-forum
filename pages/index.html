@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="モンスターハンターダブルクロスのタイムアタック記録を掲載する掲示板"
+    />
+    <title>MHXX TA 掲示板</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./">MHXX <span>TA 掲示板</span></a>
+        <nav aria-label="主要メニュー">
+          <a href="#records">記録</a>
+          <a href="#submit">投稿</a>
+          <a href="guidelines.md">ガイドライン</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>MHXX TA 掲示板</h1>
+          <p>
+            MHXXのタイムアタック記録を、ルールを共有しながら集めるコミュニティWikiです。旧Wikiの記録は引き継がず、新規に承認された記録のみを掲載します。
+          </p>
+          <a class="button" href="#submit">記録を投稿する</a>
+        </div>
+      </section>
+      <section class="container notice" aria-labelledby="notice-title">
+        <h2 id="notice-title">掲載方針</h2>
+        <p>
+          投稿内容は確認後に公開します。投稿前に<a href="guidelines.md"
+            >ガイドライン</a
+          >と各<a href="regulations/">レギュレーション</a>をご確認ください。
+        </p>
+      </section>
+      <section
+        id="records"
+        class="container records"
+        aria-labelledby="records-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">APPROVED RUNS</p>
+            <h2 id="records-title">記録一覧</h2>
+          </div>
+          <p id="record-count" aria-live="polite"></p>
+        </div>
+        <p>同じ走者の同一クエストの記録は、最高得点の1件に「採用」を表示します。</p>
+        <div class="filters" aria-label="記録の絞り込み">
+          <label
+            >クエスト<input
+              id="quest-filter"
+              type="search"
+              placeholder="クエスト名で検索"
+          /></label>
+          <label
+            >武器種
+            <select id="weapon-filter">
+              <option value="">すべて</option>
+            </select>
+          </label>
+          <label
+            >レギュレーション
+            <select id="regulation-filter">
+              <option value="">すべて</option>
+            </select>
+          </label>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>クエスト</th>
+                <th>武器種 / スタイル</th>
+                <th>タイム</th>
+                <th>ハンター</th>
+                <th>レギュレーション</th>
+                <th>スコア</th>
+                <th>証明</th>
+                <th>掲載日</th>
+              </tr>
+            </thead>
+            <tbody id="records-body">
+              <tr>
+                <td colspan="8" class="empty">記録を読み込んでいます…</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="submit" class="submit-section">
+        <div class="container">
+          <p class="eyebrow">SUBMIT A RUN</p>
+          <h2>記録を投稿する</h2>
+          <p>
+            次のいずれかの方法で投稿できます。必要項目と証明のリンクを添えてください。
+          </p>
+          <div class="submission-grid">
+            <article>
+              <h3>X（Twitter）</h3>
+              <p>DMまたはリプライで投稿します。</p>
+              <a
+                class="text-link disabled"
+                id="x-submit"
+                aria-disabled="true"
+                href="#x-account"
+                >Xアカウントを設定してください</a
+              >
+            </article>
+            <article>
+              <h3>GitHub Issue</h3>
+              <p>フォームに沿って入力する、もっとも手軽な投稿方法です。</p>
+              <a
+                class="text-link disabled"
+                id="issue-submit"
+                aria-disabled="true"
+                href="#github"
+                >GitHubリポジトリを設定してください</a
+              >
+            </article>
+            <article>
+              <h3>Pull Request</h3>
+              <p>JSONデータを追加・編集して、掲載候補を直接提案できます。</p>
+              <a
+                class="text-link disabled"
+                id="pr-submit"
+                aria-disabled="true"
+                href="#github"
+                >GitHubリポジトリを設定してください</a
+              >
+            </article>
+          </div>
+          <p class="fine-print">
+            掲載には管理者の確認が必要です。投稿経路によらず、掲載基準は同一です。
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        MHXX TA 掲示板
+        <a href="guidelines.md">ガイドライン</a>
+      </div>
+    </footer>
+    <script src="assets/site-config.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

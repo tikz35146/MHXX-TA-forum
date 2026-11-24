@@ -1,0 +1,59 @@
+{
+  "records": [
+    {
+      "hunter": "TikZ",
+      "time": "4'52\"30",
+      "style": "ブレイヴ",
+      "weaponName": "渦紋鬼懐刀【下剋上】",
+      "hunterArts": [
+        "鏡花の構えⅢ"
+      ],
+      "skills": [
+        "斬れ味レベル+2",
+        "見切り+2",
+        "弱点特効",
+        "連撃の心得",
+        "超会心"
+      ],
+      "foodSkills": [
+        "ネコの短期催眠術",
+        "ネコの乗り上手"
+      ],
+      "proofUrl": "https://www.youtube.com/watch?v=1nYwbweIiyw",
+      "publishedAt": "2026-02-24",
+      "quest": "超特殊許可 青電主",
+      "weapon": "太刀",
+      "regulation": "A",
+      "score": 0.8434955117582248,
+      "scoreCounted": true
+    },
+    {
+      "hunter": "TikZ",
+      "time": "3'46\"03",
+      "style": "ブレイヴ",
+      "weaponName": "鎧裂鎌ドヒキサキ",
+      "hunterArts": [
+        "鏡花の構えⅢ"
+      ],
+      "skills": [
+        "見切り+3",
+        "弱点特効",
+        "超会心",
+        "龍気活性",
+        "死中に活"
+      ],
+      "foodSkills": [
+        "ネコの特殊攻撃術",
+        "ネコの火事場力",
+        "ネコの蹴脚術"
+      ],
+      "proofUrl": "https://www.youtube.com/watch?v=rg-6-Wk720U",
+      "publishedAt": "2026-05-03",
+      "quest": "超特殊許可 青電主",
+      "weapon": "太刀",
+      "regulation": "C",
+      "score": 0.8434955117582248,
+      "scoreCounted": false
+    }
+  ]
+}
